@@ -16,3 +16,4 @@ D:\DotNetProjects\StudentManagementConsoleApplication\bin\Debug\net10.0\Microsof
 D:\DotNetProjects\StudentManagementConsoleApplication\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\DotNetProjects\StudentManagementConsoleApplication\obj\Debug\net10.0\StudentManagementConsoleApplication.csproj.AssemblyReference.cache
 D:\DotNetProjects\StudentManagementConsoleApplication\obj\Debug\net10.0\StudentM.3AD97691.Up2Date
+D:\DotNetProjects\StudentManagementConsoleApplication\obj\Debug\net10.0\StudentManagementConsoleApplication.sourcelink.json

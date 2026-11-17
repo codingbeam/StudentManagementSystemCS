@@ -21,6 +21,7 @@ while (true)
     Console.WriteLine("3. Search for a student");
     Console.WriteLine("4. Update a student");
     Console.WriteLine("5. Delete a student");
+    Console.WriteLine("6. Display Application Information");
     Console.WriteLine("0. Exit");
     Console.Write("Select an option: ");
 
@@ -47,6 +48,9 @@ while (true)
             break;
         case "5":
             DeleteStudent();
+            break;
+        case "6":
+            DisplayApplicationInformation();
             break;
         default:
             Console.WriteLine("Invalid option. Select a number from the menu.");
@@ -207,6 +211,16 @@ void DeleteStudent()
     Console.WriteLine(studentService.DeleteStudent(studentId.Value)
         ? $"Student {studentId.Value} was deleted successfully."
         : $"Student ID {studentId.Value} no longer exists.");
+}
+
+static void DisplayApplicationInformation()
+{
+    Version? applicationVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+
+    Console.WriteLine("\nApplication Information");
+    Console.WriteLine("Application Name: Student Management Console Application");
+    Console.WriteLine($"Application Version: {applicationVersion?.ToString() ?? "Not available"}");
+    Console.WriteLine("Description: A console application for registering, displaying, searching, updating, and deleting student records.");
 }
 
 static void DisplayStudent(Student student)
