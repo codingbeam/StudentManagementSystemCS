@@ -218,6 +218,7 @@ static void DisplayApplicationInformation()
     Version? applicationVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
 
     Console.WriteLine("\nApplication Information");
+    Console.WriteLine("\nApplication Information");
     Console.WriteLine("Application Name: Student Management Console Application");
     Console.WriteLine($"Application Version: {applicationVersion?.ToString() ?? "Not available"}");
     Console.WriteLine("Description: A console application for registering, displaying, searching, updating, and deleting student records.");
